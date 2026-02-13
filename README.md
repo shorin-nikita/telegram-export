@@ -9,8 +9,10 @@
 ### 1. Установка
 
 ```bash
-git clone https://github.com/your-username/telegram-export.git
+git clone https://github.com/shorin-nikita/telegram-export.git
 cd telegram-export
+python3 -m venv venv
+source venv/bin/activate
 pip install -e .
 ```
 
