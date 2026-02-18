@@ -1,8 +1,8 @@
 # telegram-export
 
-Export Telegram chats, channels and DMs via MTProto API.
+Экспорт чатов, каналов и личных переписок из Telegram через MTProto API.
 
-## Install
+## Установка
 
 ```bash
 git clone https://github.com/shorin-nikita/telegram-export.git
@@ -12,29 +12,29 @@ source venv/bin/activate
 pip install -e .
 ```
 
-## Setup
+## Настройка
 
-Get `API_ID` and `API_HASH` at [my.telegram.org/apps](https://my.telegram.org/apps), then run:
+Получите `API_ID` и `API_HASH` на [my.telegram.org/apps](https://my.telegram.org/apps), затем запустите:
 
 ```bash
 tg-export setup
 ```
 
-## Usage
+## Использование
 
 ```bash
-# Public channel or user
+# Публичный канал или пользователь
 tg-export export https://t.me/durov --format json
 
-# Private group by ID
+# Приватная группа по ID
 tg-export export https://t.me/c/1234567890
 
-# Last 7 days with media
+# За последние 7 дней с медиа
 tg-export export @username --days 7 --media
 ```
 
-Exports are saved to `exports/`.
+Экспорт сохраняется в папку `exports/`.
 
-## License
+## Лицензия
 
 MIT
